@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+ 
+:root{
+    --dark-white:#e5e5e5;
+    --primary:#185fe7;
+    --fontColor:#1a2b40;
+}
+body,
+ html {
+     padding: 0;
+     margin: 0;
+     width: 100%;
+     height: 100%;  
+     font-family: 'Poppins', sans-serif;
+
+ }
+ a{
+     color: var(--fontColor);
+ }
+ a:hover{
+     color: var(--fontColor);
+ }
+ body {
+     height: 100vh;    
+     background-color: var(--dark-white);
+ }
+
+ 
+
+
+ .container-fluid {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .login-box {
+     border-radius: 10px;
+     width: 450px;
+     color: var(--fontColor);
+
+ }
+
+ .appName {
+     padding: 10px 0px 15px 0px
+ }
+
+ .appName h5 {
+     font-weight: bolder;
+ }
+
+ .appIcon {
+     margin-top: 10px;
+     text-align: center;
+ }
+
+ .appIcon img {
+     border-radius: 6px;
+ }
+
+ .forgotPWD {
+     margin: 20px 0;
+     width: 100%;
+     text-align: center;
+ }
+
+ .login-section {
+
+ }
+
+ label {
+     margin-bottom: 0px;
+ }
+
+ #login,#getLink{
+     background-color: var(--primary);
+     color: white;
+     font-weight: bold;
+ }
+

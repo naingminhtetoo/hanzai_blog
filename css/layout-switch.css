@@ -1,0 +1,25 @@
+
+@media (max-width: 500px) {
+    .iconBox {
+        display: none;
+    }
+    .inner-text h3,.inner-text p {
+        text-align: center;
+    }
+    .fd-col {
+        flex-direction: column;
+    }
+    .admin-n,.teacher-n{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .ph-box {
+        display: none;
+    }
+    .responsive-search {
+        display: block;
+    }
+}
+
