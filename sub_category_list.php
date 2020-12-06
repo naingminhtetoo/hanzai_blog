@@ -12,7 +12,18 @@
 
     <?php
     $i = 1;
+    if(count(subCategories()) == 0 ){
+        ?>
+        <tr>
+            <th colspan="5" class="text-center text-danger">
+                    No data Found!
+            </th>
+        </tr>
+        <?php
+    }
     foreach (subCategories() as $c){
+        if(category($c['category_id']) != null){
+
         ?>
         <tr class="">
             <td><?php echo $i++; ?></td>
@@ -31,6 +42,8 @@
             <td><?php echo showTime($c['created_at']); ?></td>
         </tr>
 
-    <?php } ?>
+    <?php }
+
+    }?>
     </tbody>
 </table>

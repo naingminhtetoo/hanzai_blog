@@ -18,14 +18,14 @@ require_once "layout/nav_bar.php";
         </div>
 
         <div class="row">
-            <div class="col-12 col-xl-8">
+            <div class="col-12">
                 <div class="card mb-4 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="mb-0">
                                 <i class="feather-layers text-primary"></i> Post List
                             </h5>
-                            <a href="<?php echo $url; ?>/post_add.php" class="btn btn-outline-primary">
+                            <a href="<?php echo $url; ?>/post_add.php" class="btn btn-outline-primary btn-sm">
                                 <i class="feather-plus-circle"></i>
                             </a>
                         </div>
@@ -43,7 +43,7 @@ require_once "layout/nav_bar.php";
 <script>
 
     $(function() {
-        // $(".app-name").text("Admin");
+        $(".app-name").text("Post");
         $(".list").removeClass("list-selected");
         $(".listPost").addClass("list-selected");
         // scrollLoad();

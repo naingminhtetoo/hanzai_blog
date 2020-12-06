@@ -7,7 +7,6 @@ require_once "layout/nav_bar.php";
 <section class="main-section">
             <div class="container-fluid mx-2">
                 <div class="row d-flex">
-
                     <div class="col-12 col-sm-6 col-xl-3 ">
                         <div class="card total-box p-3 px-4 shadow d-flex justify-content-between flex-row align-items-center">
                             <div class="t-icon bg-primary p-2 rounded shadow">
@@ -77,7 +76,7 @@ require_once "layout/nav_bar.php";
 <script>
 
     $(function() {
-        // $(".app-name").text("Admin");
+        $(".app-name").text("Dashboard");
         $(".list").removeClass("list-selected");
         $(".listDashboard").addClass("list-selected");
         // scrollLoad();

@@ -73,6 +73,10 @@ $(document).on("click",".close-i-v",function(){
 
 });
 
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
 
 
 

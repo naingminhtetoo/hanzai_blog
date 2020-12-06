@@ -252,24 +252,24 @@ a:hover {
   color: #185fe7;
   cursor: pointer;
 }
-
-.box-toggle, .btn-custom {
+/*.box-toggle,*/
+ .btn-custom {
   margin: 0 0 0 auto;
   cursor: pointer;
 }
 
-.box-toggle i {
-  font-size: 16px;
-  padding: 6px;
-  border: 1.5px solid var(--secondary);
-  color: var(--secondary);
-  border-radius: 4px;
-  transition: 0.3s;
-}
-.box-toggle i:hover {
-  background-color: var(--secondary);
-  color: white;
-}
+/*.box-toggle i {*/
+/*  font-size: 16px;*/
+/*  padding: 6px;*/
+/*  border: 1.5px solid var(--secondary);*/
+/*  color: var(--secondary);*/
+/*  border-radius: 4px;*/
+/*  transition: 0.3s;*/
+/*}*/
+/*.box-toggle i:hover {*/
+/*  background-color: var(--secondary);*/
+/*  color: white;*/
+/*}*/
 
 .btn-custom i {
   font-size: 16px;

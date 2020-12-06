@@ -42,14 +42,7 @@
                 </div>
 
 
-                <div class="a-m-panel my-3">
-                    <a class="my-2" href="#">
-                        <div class="list pl-2 text-white-50">Account Setting</div>
-                    </a>
-                    <a class="my-2" href="<?php echo $url; ?>/category.php">
-                        <div class="list listSetting"><i class="feather-user px-3 pl-4"></i>Profile</div>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>

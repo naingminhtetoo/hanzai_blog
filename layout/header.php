@@ -3,6 +3,8 @@ require_once "core/base.php";
 require_once "core/functions.php";
 require_once "core/auth.php";
 
+$user = $_SESSION['user'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,8 @@ require_once "core/auth.php";
     <link rel="stylesheet" href="<?php echo $url; ?>/vendor/feather-icon/feather.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/vendor/bootstrap/css/bootstrap.min.css">
     <link href="<?php echo $url;?>/vendor/summer_note/summernote-bs4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $url; ?>/vendor/data_table/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/vendor/data_table/jquery.dataTables.min.js">
     <link href="<?php echo $url; ?>/css/simple-sidebar.css" rel="stylesheet">
     <link href="<?php echo $url; ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo $url; ?>/css/layout-switch.css" rel="stylesheet">

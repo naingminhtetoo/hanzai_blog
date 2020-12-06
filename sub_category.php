@@ -104,7 +104,7 @@ require_once "layout/nav_bar.php";
 <script>
 
     $(function() {
-        // $(".app-name").text("Admin");
+        $(".app-name").text("Sub Category");
         $(".list").removeClass("list-selected");
         $(".listSubCategory").addClass("list-selected");
         // scrollLoad();

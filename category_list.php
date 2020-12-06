@@ -1,3 +1,4 @@
+<hr>
 <table class="table table-hover mt-3 mb-0">
     <thead>
     <tr>
@@ -10,6 +11,15 @@
     <tbody>
 
     <?php
+    if(count(categories()) == 0 ){
+        ?>
+        <tr>
+            <th colspan="5" class="text-center text-danger">
+                No data Found!
+            </th>
+        </tr>
+        <?php
+    }
     $i = 1;
     foreach (categories() as $c){
         ?>

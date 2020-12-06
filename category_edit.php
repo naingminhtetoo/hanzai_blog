@@ -75,7 +75,7 @@ if($current == null){
 <script>
 
     $(function() {
-        // $(".app-name").text("Admin");
+        $(".app-name").text("Category");
         $(".list").removeClass("list-selected");
         $(".listCategory").addClass("list-selected");
         // scrollLoad();
