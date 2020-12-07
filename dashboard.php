@@ -13,8 +13,8 @@ require_once "layout/nav_bar.php";
                                 <i class="feather-book text-white"></i>
                             </div>
                             <div class="t-s d-flex flex-column align-items-center"><h5 id="total-major"
-                                                                                       class="m-0 text-primary counter-up">3</h5>
-                                <h6 class="text-black-50">Major</h6></div>
+                                                                                       class="m-0 text-dark counter-up">3</h5>
+                                <h6 class="text-dark">Major</h6></div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-3 ">
@@ -24,8 +24,8 @@ require_once "layout/nav_bar.php";
 
                             </div>
                             <div class="t-s d-flex flex-column align-items-center"><h5 id="total-news"
-                                                                                       class="m-0 text-primary counter-up">5</h5>
-                                <h6 class="text-black-50">News</h6></div>
+                                                                                       class="m-0 text-dark counter-up">5</h5>
+                                <h6 class="text-dark">News</h6></div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-3 ">
@@ -34,8 +34,8 @@ require_once "layout/nav_bar.php";
                                 <i class="feather-file-text text-white"></i>
                             </div>
                             <div class="t-s d-flex flex-column align-items-center"><h5 id="total-oq"
-                                                                                       class="m-0 text-primary counter-up">90</h5>
-                                <h6 class="text-black-50">Old Question</h6></div>
+                                                                                       class="m-0 text-dark counter-up">90</h5>
+                                <h6 class="text-dark">Old Question</h6></div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-3 ">
@@ -44,8 +44,8 @@ require_once "layout/nav_bar.php";
                                 <i class="feather-heart text-white"></i>
                             </div>
                             <div class="t-s d-flex flex-column align-items-center"><h5 id="total-memory"
-                                                                                       class="m-0 text-primary counter-up">99</h5>
-                                <h6 class="text-black-50">Memory</h6></div>
+                                                                                       class="m-0 text-dark counter-up">99</h5>
+                                <h6 class="text-dark">Memory</h6></div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-xl-3 ">
@@ -55,8 +55,8 @@ require_once "layout/nav_bar.php";
 
                             </div>
                             <div class="t-s d-flex flex-column align-items-center"><h5 id="total-ebook"
-                                                                                       class="m-0 text-primary counter-up">9</h5>
-                                <h6 class="text-black-50">E Book</h6></div>
+                                                                                       class="m-0 text-dark counter-up">9</h5>
+                                <h6 class="text-dark">E Book</h6></div>
                         </div>
                     </div>
                 </div>

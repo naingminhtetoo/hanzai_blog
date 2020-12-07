@@ -13,7 +13,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #e4971c ;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -21,6 +21,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --secondary2:black;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -53,7 +54,7 @@ i {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 0 solid rgba(0, 0, 0, 0.125);
-  color: #185fe7;
+  color: var(--primary);
 }
 
 .card-header {
@@ -220,8 +221,8 @@ a:hover {
 }
 
 .list-selected {
-  background-color: #185fe7;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--secondary2);
   border-radius: 4px;
 }
 
@@ -249,7 +250,7 @@ a:hover {
 
 .data-add {
   margin: 0 0 0 auto;
-  color: #185fe7;
+  color: var(--primary);
   cursor: pointer;
 }
 /*.box-toggle,*/
@@ -274,13 +275,13 @@ a:hover {
 .btn-custom i {
   font-size: 16px;
   padding: 6px;
-  border: 1.5px solid #185fe7;
-  color: #185fe7;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
   border-radius: 4px;
   transition: 0.3s;
 }
 .btn-custom i:hover {
-  background-color: #185fe7;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -351,7 +352,7 @@ a:hover {
   display: none;
   width: 30px;
   height: 30px;
-  background: #185fe7;
+  background: var(--primary);
   text-align: center;
   line-height: 30px;
   border-radius: 50%;
@@ -369,12 +370,12 @@ a:hover {
 }
 
 .primary {
-  background-color: #185fe7 !important;
+  background-color: var(--primary) !important;
   color: white;
 }
 
 .bc-primary {
-  border-color: #185fe7 !important;
+  border-color: var(--primary) !important;
 }
 
 .success {
@@ -538,8 +539,8 @@ a:hover {
 
 .btn-primary-custom {
   color: #fff;
-  background-color: #185fe7;
-  border-color: #185fe7;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .progress {
@@ -558,7 +559,7 @@ a:hover {
 
 .line {
   height: 1.5px;
-  background-color: #185fe7;
+  background-color: var(--primary);
 }
 
 .example_wrapper .row {
@@ -664,11 +665,11 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 .current-data span {
   padding: 0 5px;
-  color: #185fe7;
+  color: var(--primary);
 }
 
 .l-s-name {
-  color: #185fe7;
+  color: var(--primary);
 }
 .l-s-name i {
   color: var(--gray-dark);
@@ -679,17 +680,17 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .r-s-add {
-  background-color: #185fe7;
+  background-color: var(--primary);
   color: white;
   padding: 3px 7px;
   border-radius: 5px;
 }
 
 .r-s-subject .r-s-selected {
-  border: 1.5px solid #185fe7;
+  border: 1.5px solid var(--primary);
   padding: 2px 10px;
   border-radius: 50px;
-  color: #185fe7;
+  color: var(--primary);
   font-size: 14px;
   transition: 0.5s;
   display: flex;
@@ -714,14 +715,14 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .r-s-item {
-  border: 1.5px solid #185fe7;
-  color: #185fe7;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
   transition: 0.3s;
   font-size: 10px;
 }
 .r-s-item:hover {
   color: white;
-  background-color: #185fe7;
+  background-color: var(--primary);
 }
 
 .img-width {
@@ -729,11 +730,11 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .bg-primary {
-  background-color: #185fe7 !important;
+  background-color: var(--primary) !important;
 }
 
 .text-primary {
-  color: #185fe7 !important;
+  color: var(--primary) !important;
 }
 
 .navbar {
@@ -745,7 +746,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   color: white;
   border-radius: 5px;
   border: none !important;
-  background-color: #3879f2 !important;
+  background-color: var(--primary) !important;
   color: white;
   border: none !important;
   box-shadow: 0px 0px 4px 1px rgba(102, 101, 101, 0.4);

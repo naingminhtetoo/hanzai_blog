@@ -17,7 +17,7 @@ if(isset($_SESSION['user'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="<?php echo $url; ?>/images/app_icon.png">
+    <link rel="icon" href="<?php echo $url; ?>/images/app_logo_2.png">
 
     <!-- Bootstrap core CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
@@ -34,11 +34,9 @@ if(isset($_SESSION['user'])){
 <div class="container-fluid">
     <div class="login-box">
         <div class="appIcon">
-            <img src="<?php echo $url; ?>/images/app_icon.png" width="100px" height="100px" alt="">
+            <img src="<?php echo $url; ?>/images/app_title_logo.png" style="max-width: 300px;" alt="">
         </div>
-        <div class="appName text-center">
-            <h5>UCSLso Admin</h5>
-        </div>
+        <br>
         <div class="login-section">
             <div class="row">
                 <div class="col-10 offset-1">

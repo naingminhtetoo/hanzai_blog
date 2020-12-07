@@ -5,11 +5,11 @@ function con(){
     return mysqli_connect("localhost","root","","hanzai_blog");
 }
 
-$info = array([
-    "name" => "Hanzai Blog",
-    "short" => "Hanzai",
+$info = [
+    "name" => "Hanzai Market Analysis Blog",
+    "short" => "HanZai Blog",
     "description" => ""
-]);
+];
 
 $url = "http://{$_SERVER['HTTP_HOST']}/admin";
 

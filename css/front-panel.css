@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+
+}
+@media (max-width: 768px) {
+    #app-title{
+        font-size: 28px;
+    }
+    #app-photo{
+        width: 100px;
+
+    }
+}
+
+.nav-item.active > .nav-link{
+    border-bottom: 2px solid white !important;
+}
+
+@media (max-width: 500px) {
+    #app-title{
+        font-size: 20px;
+    }
+    #app-photo{
+        width: 65px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    #app-title{
+        font-size: 18px;
+    }
+    #app-photo{
+        width: 50px;
+
+    }
+}
+

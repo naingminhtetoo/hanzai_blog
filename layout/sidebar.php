@@ -3,7 +3,7 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="list-group list-group-flush">
             <div class="profile-section">
-                <!--                <img src="images/icon_font.png" class="appIcon">-->
+                <img src="images/app_title_logo_light.png" class="appIcon">
                 <span class="m-close">
                         <i class="feather-x text-danger"></i>
                     </span>
@@ -14,7 +14,7 @@
                     <div class="list listDashboard"><i class="feather-home px-3 pl-4"></i>Dashboard
                     </div>
                 </a>
-                <a class="my-2" href="userData.php">
+                <a class="my-2" href="index.php">
                     <div class="list listUser"><i class="feather-layout px-3 pl-4"></i>Front Panel</div>
                 </a>
                 <div class="a-m-panel my-3">
