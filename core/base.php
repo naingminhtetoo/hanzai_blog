@@ -8,7 +8,9 @@ function con(){
 $info = [
     "name" => "Hanzai Market Analysis Blog",
     "short" => "HanZai Blog",
-    "description" => ""
+    "description" => "",
+    "phone" => "+959784294674",
+    "email" => "kominthantforex@gmail.com"
 ];
 
 $url = "http://{$_SERVER['HTTP_HOST']}/admin";

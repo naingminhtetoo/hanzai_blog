@@ -71,7 +71,22 @@
         unlink($photo);
     }
 
+function timeago($date) {
+    $timestamp = strtotime($date);
 
+    $strTime = array("second", "minute", "hour", "day", "month", "year");
+    $length = array("60","60","24","30","12","10");
+
+    $currentTime = time();
+    if($currentTime >= $timestamp) {
+        $diff     = time()- $timestamp;
+        for($i = 0; $diff >= $length[$i] && $i < count($length)-1; $i++) {
+            $diff = $diff / $length[$i];
+        }
+        $diff = round($diff);
+        return $diff . " " . $strTime[$i] . "(s) ago ";
+    }
+}
 //common end
 
 //auth start
@@ -345,12 +360,13 @@ function subCategories(){
     return fetchAll($sql);
 }
 
-function subCategoriesByCategoryId($category_id){
-    $sql = "SELECT * FROM sub_categories WHERE category_id = $category_id";
+function subCategoriesByCategoryId($category_id,$output = '*'){
+    $sql = "SELECT $output FROM sub_categories WHERE category_id = $category_id";
     return fetchAll($sql);
 }
 
 function subCategoryDelete($id){
+
     $sql="DELETE FROM sub_categories WHERE id = $id";
     return runQuery($sql);
 
@@ -514,7 +530,7 @@ function post($id){
 }
 
 function posts(){
-    $sql = "SELECT * FROM posts ORDER  BY id DESC";
+    $sql = "SELECT posts.* FROM posts INNER JOIN sub_categories ON posts.sub_category_id = sub_categories.id ORDER BY posts.id DESC";
     return fetchAll($sql);
 }
 
@@ -525,3 +541,18 @@ function postDelete($id){
 
 }
 //post end
+
+
+
+//api start
+
+function apiOutput($data){
+     echo json_encode($data);
+}
+
+function apiError($message){
+     echo json_encode($message);
+     die();
+}
+
+//api end

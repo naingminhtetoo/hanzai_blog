@@ -4,6 +4,55 @@
     font-family: 'Play', sans-serif;
 
 }
+.ph-menu-div{
+}
+.ph-menu{
+    height: 0;
+    overflow: hidden;
+}
+.ph-menu.active{
+    height: auto;
+}
+
+.card-post{
+
+}
+.card-post img{
+    object-fit: cover;
+}
+
+.card-main-text{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 101;
+}
+.card-main-post{
+    position: relative;
+
+}
+.card-main-shadow{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -2px -96px 90px 18px rgba(52,58,64,1);
+    -moz-box-shadow: inset -2px -96px 90px 18px rgba(52,58,64,1);
+    box-shadow: inset -2px -96px 90px 18px rgba(52,58,64,1);
+    /*-webkit-box-shadow: inset -2px -96px 56px -4px rgba(52,58,64,1);*/
+    /*-moz-box-shadow: inset -2px -96px 56px -4px rgba(52,58,64,1);*/
+    /*box-shadow: inset -2px -96px 56px -4px rgba(52,58,64,1);*/
+}
+
+.top-post-section{
+  position: sticky;
+  top: 65px;
+}
+
+
 @media (max-width: 768px) {
     #app-title{
         font-size: 28px;
@@ -11,6 +60,9 @@
     #app-photo{
         width: 100px;
 
+    }
+    .top-post-section{
+        position: relative;
     }
 }
 
