@@ -1,5 +1,7 @@
 <hr>
-<table class="table table-hover mt-3 mb-0">
+<div class="table-responsive">
+
+<table class="table table-hover mt-3 table-sm mb-0">
     <thead>
     <tr>
         <th>#</th>
@@ -43,3 +45,4 @@
     <?php } ?>
     </tbody>
 </table>
+</div>

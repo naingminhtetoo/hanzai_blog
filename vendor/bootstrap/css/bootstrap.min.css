@@ -143,13 +143,13 @@ sup {
 }
 
 a {
-    color: #e4971c ;
+    color: var(--primary);
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: var(--primary);
+
     text-decoration: none;
 }
 

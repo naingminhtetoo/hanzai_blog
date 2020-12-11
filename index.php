@@ -30,3 +30,7 @@ $data = json_decode(file_get_contents("http://localhost/admin/api/posts.php?page
 </div>
 
 <?php require_once "layout/front_panel/footer.php"?>
+<script>
+    $(".nav-item").removeClass("active");
+    $(".nav-home").addClass("active");
+</script>

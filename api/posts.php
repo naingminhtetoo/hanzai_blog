@@ -15,8 +15,7 @@ $no_of_records_per_page = 9;
 $offset = ($page-1) * $no_of_records_per_page;
 $order_sql = " ORDER BY id DESC";
 $manual = "";
-$total_rows = countTotal('posts');
-$total_pages = ceil($total_rows / $no_of_records_per_page);
+
 
 if(isset($_GET['id'])){
     $id = textFilter($_GET['id']);
@@ -35,6 +34,8 @@ else if(isset($_GET['page'])){
             "error" => "page number must be number"
         ]);
     }
+    $no_of_records_per_page = 9;
+    $offset = ($page-1) * $no_of_records_per_page;
     $manual = "LIMIT $offset , $no_of_records_per_page";
 }
 
@@ -56,8 +57,8 @@ if(isset($_GET['orderBy'])){
 
 
 
-
-
+$total_rows = countTotal('posts');
+$total_pages = floor($total_rows / $no_of_records_per_page);
 $sql_default = "SELECT posts.* FROM posts INNER JOIN sub_categories ON posts.sub_category_id = sub_categories.id  WHERE 1  $sql $order_sql $manual ";
 //die($sql_default);
 $rows = [];

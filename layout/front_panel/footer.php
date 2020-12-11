@@ -12,17 +12,15 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="">
-                    <table class="table table-borderless        ">
-                        <tr>
-                            <td><i class="feather-phone h5 text-primary"></i></td>
-                            <td><a href="tel:<?php echo $info['phone']; ?>" class="h5"><?php echo $info['phone']; ?></a></td>
-                        </tr>
-                        <tr>
-                            <td><i class="feather-mail h5 text-primary"></i></td>
-                            <td><a href="mailto:<?php echo $info['email']; ?>" class="h5"><?php echo $info['email']; ?></a></td>
-                        </tr>
 
-                    </table>
+                    <div class="mb-3 d-flex align-items-center">
+                        <i class="feather-phone h5 text-primary"></i>
+                        <a href="tel:<?php echo $info['phone']; ?>" class="h6 ml-2"><?php echo $info['phone']; ?></a>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <i class="feather-mail h5 text-primary"></i>
+                        <a href="mailto:<?php echo $info['email']; ?>" class="h6 ml-2"><?php echo $info['email']; ?></a>
+                    </div>
                     <div class="mt-3 mb-3">
                         <h5 class="text-primary mb-3">Follow Me: </h5>
                         <div class="d-flex">

@@ -12,12 +12,12 @@ foreach ($data as $item){
             <img src="files/<?php echo $item->photo ?>" height="200px" alt="">
             <div class="px-2">
                 <div>
-                    <small><i class="feather-user"></i> <?php echo user($item->user_id)['name']; ?></small>
-                    <small class="ml-2"><i class="feather-folder"></i> <?php echo $item->category; ?></small>
-                    <small class="ml-2"><i class="feather-calendar"></i> <?php echo timeago($item->created_at); ?></small>
+                    <small class="text-dark"><i class="feather-user"></i> <?php echo user($item->user_id)['name']; ?></small>
+                    <small class="ml-2 text-dark"><i class="feather-folder"></i> <?php echo $item->category; ?></small>
+                    <small class="ml-2 text-dark"><i class="feather-calendar"></i> <?php echo timeago($item->created_at); ?></small>
                 </div>
                 <div class="">
-                    <p class="text-black font-weight-bold"><?php echo short($item->title,100); ?>
+                    <p class="text-dark font-weight-bold"><?php echo short($item->title,100); ?>
                     </p>
                 </div>
             </div>

@@ -22,10 +22,16 @@
                         <div class="list pl-2 text-white-50">Category Management</div>
                     </a>
                     <a class="my-2" href="<?php echo $url; ?>/category.php">
-                        <div class="list listCategory"><i class="feather-list px-3 pl-4"></i>Main Category</div>
+                        <div class="list listCategory d-flex justify-content-around align-items-center">
+                            <div class="d-flex align-items-center"><i class="feather-list pr-2"></i><span>Main Category</span></div>
+                            <span class="badge badge-light badge-pill shadow-sm text-dark"><?php echo count(categories()) ?></span>
+                        </div>
                     </a>
                     <a class="my-2" href="<?php echo $url; ?>/sub_category.php">
-                        <div class="list listSubCategory"><i class="feather-list px-3 pl-4"></i>Sub Category</div>
+                        <div class="list listSubCategory d-flex justify-content-around align-items-center">
+                            <div class="d-flex align-items-center"><i class="feather-list pr-2"></i><span>Sub Category</span></div>
+                            <span class="badge badge-light badge-pill shadow-sm text-dark"><?php echo count(subCategories()) ?></span>
+                        </div>
                     </a>
                 </div>
 
@@ -34,10 +40,14 @@
                         <div class="list pl-2 text-white-50">Post Management</div>
                     </a>
                     <a class="my-2" href="<?php echo $url; ?>/post.php">
-                        <div class="list listPost"><i class="feather-list px-3 pl-4"></i>Post List</div>
+                        <div class="list listPost d-flex justify-content-around align-items-center">
+                            <div class="d-flex align-items-center"><i class="feather-list pr-2"></i><span>Post List</span></div>
+                            <span class="badge badge-pill badge-light  shadow-sm text-dark"><?php echo count(posts()) ?></span>
+                        </div>
                     </a>
                     <a class="my-2" href="<?php echo $url; ?>/post_add.php">
-                        <div class="list listPostAdd"><i class="feather-plus-circle px-3 pl-4"></i>Add Post</div>
+                        <div class="list listPostAdd"><i class="feather-plus-circle pr-2 pl-4"></i>Add Post</div>
+
                     </a>
                 </div>
 

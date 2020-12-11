@@ -280,6 +280,7 @@ function category($id){
 
 function categories(){
     $sql = "SELECT * FROM categories ORDER  BY id DESC";
+
     return fetchAll($sql);
 }
 
@@ -356,7 +357,7 @@ function subCategory($id){
 }
 
 function subCategories(){
-    $sql = "SELECT * FROM sub_categories ORDER  BY category_id DESC";
+    $sql = "SELECT sub_categories.* FROM sub_categories INNER JOIN categories ON sub_categories.category_id = categories.id ORDER  BY sub_categories.category_id DESC";
     return fetchAll($sql);
 }
 
@@ -556,3 +557,21 @@ function apiError($message){
 }
 
 //api end
+
+
+// viewer count start
+function viewerRecord($userId,$postId,$device){
+    $sql = "INSERT INTO viewers (user_id,post_id,devices) VALUES ('$userId','$postId','$device')";
+    runQuery($sql);
+}
+
+function viewerCountByPost($postId){
+    $sql = "SELECT * FROM viewers WHERE post_id = $postId";
+    return fetchAll($sql);
+
+}
+function viewerCountByUser($userId){
+    $sql = "SELECT * FROM viewers WHERE user_id = $userId";
+    return fetchAll($sql);
+}
+// viewer count end

@@ -16,6 +16,14 @@ else{
     $id=0;
 }
 $data = json_decode(file_get_contents("http://localhost/admin/api/posts.php?id=$id"));
+session_start();
+if(isset($_SESSION['user']['id'])){
+    $userId = $_SESSION['user']['id'];
+}else{
+    $userId = 0;
+}
+
+viewerRecord($userId, $id, $_SERVER['HTTP_USER_AGENT']);
 ?>
 <?php require_once "layout/front_panel/ph_nav_bar.php"?>
 
@@ -45,3 +53,4 @@ $data = json_decode(file_get_contents("http://localhost/admin/api/posts.php?id=$
     </div>
 
 <?php require_once "layout/front_panel/footer.php"?>
+

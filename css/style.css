@@ -548,13 +548,11 @@ a:hover {
 }
 
 .catagory-section .list {
-  display: flex;
-  align-items: center;
+
   min-height: 40px;
 }
 
 .catagory-section a i {
-  font-size: 20px;
 }
 
 .line {
@@ -1054,6 +1052,9 @@ input[type=number] {
   max-width: 200px;
 }
 
+.list.list-selected .badge{
+  background: var(--white);
+}
 @media only screen and (max-width: 768px) {
   .my-detail {
     padding-left: 0px;
