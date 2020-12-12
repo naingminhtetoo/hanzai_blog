@@ -20,7 +20,9 @@
 .card-post img{
     object-fit: cover;
 }
-
+.object-fit{
+    object-fit: cover;
+}
 .card-main-text{
     width: 100%;
     position: absolute;

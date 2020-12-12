@@ -27,6 +27,5 @@ $user = $_SESSION['user'];
     <link href="<?php echo $url; ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo $url; ?>/css/layout-switch.css" rel="stylesheet">
 </head>
-
 <body>
 

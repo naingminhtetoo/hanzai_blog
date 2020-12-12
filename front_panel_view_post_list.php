@@ -4,9 +4,8 @@
                 <?php
                 if (empty($data)) {
                     ?>
-                    <div class="mt-4 alert alert-danger">
-                        There is no record here! Go to <a href="<?php echo $url ?>/index.php " class="text-decoration-underline">Home</a>
-                    </div>
+                    <?php echo alert("No Data Found! Please Go to <a href='$url/index.php'>HOME</a> and Try Again","danger") ?>
+
                     <?php
 
                 } else {

@@ -15,7 +15,7 @@ if(isset($_GET['id'])){
 else{
     $id=0;
 }
-$data = json_decode(file_get_contents("http://localhost/admin/api/posts.php?id=$id"));
+$data = json_decode(file_get_contents("$url/api/posts.php?id=$id"));
 session_start();
 if(isset($_SESSION['user']['id'])){
     $userId = $_SESSION['user']['id'];
@@ -26,14 +26,8 @@ if(isset($_SESSION['user']['id'])){
 viewerRecord($userId, $id, $_SERVER['HTTP_USER_AGENT']);
 ?>
 <?php require_once "layout/front_panel/ph_nav_bar.php"?>
+<?php require_once "layout/front_panel/app_logo_header.php"?>
 
-
-    <header class="container-fluid  p-0">
-        <div class="container-xl logo-section d-flex align-items-center p-2 px-4">
-            <img src="<?php echo $url; ?>/images/app_title_logo.png" id="app-photo" width="130px" alt="">
-            <h1 class="mb-0 ml-2 font-weight-bold" id="app-title"><?php echo $info['name']; ?></h1>
-        </div>
-    </header>
 <?php require_once "layout/front_panel/nav_bar.php"; ?>
     <div class="container-xl">
             <div class="row">

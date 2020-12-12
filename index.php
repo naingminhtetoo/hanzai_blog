@@ -9,17 +9,10 @@ if(isset($_GET['page'])){
         $pageno = $_GET['page'];
     }
 }
-$data = json_decode(file_get_contents("http://localhost/admin/api/posts.php?page=$pageno"));
+$data = json_decode(file_get_contents("$url/api/posts.php?page=$pageno"));
 ?>
 <?php require_once "layout/front_panel/ph_nav_bar.php"?>
-
-
-<header class="container-fluid  p-0">
-    <div class="container-xl logo-section d-flex align-items-center p-2 px-4">
-        <img src="<?php echo $url; ?>/images/app_title_logo.png" id="app-photo" width="130px" alt="">
-        <h1 class="mb-0 ml-2 font-weight-bold" id="app-title"><?php echo $info['name']; ?></h1>
-    </div>
-</header>
+<?php require_once "layout/front_panel/app_logo_header.php"?>
 <?php require_once "layout/front_panel/nav_bar.php"; ?>
 <div class="container-xl">
 

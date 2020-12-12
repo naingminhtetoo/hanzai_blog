@@ -4,9 +4,9 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="d-flex flex-column">
                     <img src="<?php echo $url; ?>/images/app_title_logo_light.png" width="150px" alt="">
-                    <a href="index.php" class="mt-3 h5">Home</a>
-                    <a href="#" class="mt-3 h5">About Me</a>
-                    <a href="#" class="mt-3 h5">Contact Me</a>
+                    <a href="<?php echo $url; ?>/index.php" class="mt-3 h5">Home</a>
+                    <a href="<?php echo $url; ?>/about.php" class="mt-3 h5">About Me</a>
+                    <a href="<?php echo $url; ?>/contact.php " class="mt-3 h5">Contact Me</a>
 
                 </div>
             </div>
@@ -47,6 +47,28 @@
     </div>
 </section>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search Box</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="search.php" method="get">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="search_text" placeholder="Search....">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-primary" type="submit" name="searchBtn">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="<?php echo $url; ?>/vendor/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

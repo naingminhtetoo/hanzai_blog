@@ -3,7 +3,7 @@
         <div class="ph-menu-btn">
             <i class="feather-menu text-white h3"></i>
         </div>
-        <div>
+        <div data-toggle="modal" data-target="#exampleModal">
             <i class="feather-search text-white h4"></i>
         </div>
     </div>

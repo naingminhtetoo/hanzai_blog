@@ -7,66 +7,7 @@
     </div>
     <hr>
     <div class="top-post-section">
-        <div>
-            <h5 class="font-weight-bold mb-3">Popular Posts</h5>
-            <div class="">
-                <div class="mb-2">
-                    <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, officiis?</h6>
-                    <div>
-                        <small class="text-black-50"><i class="feather-clock"></i>
-                            4 hours ago
-                        </small>
-                        <small class="text-black-50"><i class="feather-folder"></i>
-                            Forex
-                        </small>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, officiis?</h6>
-                    <div>
-                        <small class="text-black-50"><i class="feather-clock"></i>
-                            4 hours ago
-                        </small>
-                        <small class="text-black-50"><i class="feather-folder"></i>
-                            Forex
-                        </small>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, officiis?</h6>
-                    <div>
-                        <small class="text-black-50"><i class="feather-clock"></i>
-                            4 hours ago
-                        </small>
-                        <small class="text-black-50"><i class="feather-folder"></i>
-                            Forex
-                        </small>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, officiis?</h6>
-                    <div>
-                        <small class="text-black-50"><i class="feather-clock"></i>
-                            4 hours ago
-                        </small>
-                        <small class="text-black-50"><i class="feather-folder"></i>
-                            Forex
-                        </small>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, officiis?</h6>
-                    <div>
-                        <small class="text-black-50"><i class="feather-clock"></i>
-                            4 hours ago
-                        </small>
-                        <small class="text-black-50"><i class="feather-folder"></i>
-                            Forex
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include_once "popular_posts.php"; ?>
         <hr>
     </div>
     <hr>

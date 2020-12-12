@@ -53,11 +53,11 @@
                         ?>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0" method="get" action="search.php">
                     <div class="input-group ">
-                        <input type="text" class="form-control" placeholder="Search...." aria-describedby="button-addon2" required>
+                        <input type="text" class="form-control" name="search_text" placeholder="Search...." aria-describedby="button-addon2" required>
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit" id="button-addon2">
+                            <button class="btn btn-primary" type="submit" name="searchBtn" id="button-addon2">
                                     <span>
                                         <i class="feather-search"></i>
                                     </span>

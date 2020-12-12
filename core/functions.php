@@ -22,7 +22,6 @@
     function fetch($sql){
         $query = mysqli_query(con(),$sql);
         $rows = mysqli_fetch_assoc($query);
-
         return $rows;
     }
 
@@ -526,7 +525,7 @@ function updatePost(){
 
 }
 function post($id){
-    $sql = "SELECT * FROM posts WHERE id = $id";
+    $sql = "SELECT posts.* FROM posts INNER JOIN sub_categories ON posts.sub_category_id = sub_categories.id AND posts.id = $id";
     return fetch($sql);
 }
 
@@ -535,11 +534,20 @@ function posts(){
     return fetchAll($sql);
 }
 
+function postsOrderByViewers(){
+    $sql = "SELECT COUNT(*) AS total,post_id FROM `viewers` GROUP BY post_id ORDER BY total DESC,post_id DESC LIMIT 5";
+    return fetchAll($sql);
+}
 function postDelete($id){
       removeFile('posts',"id='$id'",'photo');
       $sql="DELETE FROM posts WHERE id = $id ";
       return runQuery($sql);
 
+}
+
+function fSearch($searchKey){
+    $sql = "SELECT posts.* FROM posts INNER JOIN sub_categories ON posts.sub_category_id = sub_categories.id  WHERE posts.title LIKE '%$searchKey%' ORDER BY id DESC";
+    return fetchAll($sql);
 }
 //post end
 

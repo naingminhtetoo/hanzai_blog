@@ -21,17 +21,11 @@ if(isset($_GET['sub_category'])){
 else{
     linkTo('index.php');
 }
-$data = json_decode(file_get_contents("http://localhost/admin/api/api_posts_by_category.php?$sub_category&page=$pageno"));
+
+$data = json_decode(file_get_contents("$url/api/api_posts_by_category.php?$sub_category&page=$pageno"));
 ?>
 <?php require_once "layout/front_panel/ph_nav_bar.php"?>
-
-
-    <header class="container-fluid  p-0">
-        <div class="container-xl logo-section d-flex align-items-center p-2 px-4">
-            <img src="<?php echo $url; ?>/images/app_title_logo.png" id="app-photo" width="130px" alt="">
-            <h1 class="mb-0 ml-2 font-weight-bold" id="app-title"><a href="<?php echo $url; ?>/index.php" class="text-dark"><?php echo $info['name']; ?></a></h1>
-        </div>
-    </header>
+<?php require_once "layout/front_panel/app_logo_header.php"?>
 <?php require_once "layout/front_panel/nav_bar.php"; ?>
     <div class="container-xl">
         <div class="row">
@@ -39,7 +33,16 @@ $data = json_decode(file_get_contents("http://localhost/admin/api/api_posts_by_c
                 <nav aria-label="breadcrumb" class="mt-3">
                     <ol class="breadcrumb m-0 p-0 bg-white">
                         <li class="breadcrumb-item"><a href="<?php echo $url; ?>/index.php">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Category</li>
+                        <li class="breadcrumb-item"><a href="<?php echo $url; ?>/index.php">Category</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <?php
+                            if(!empty(subCategory($_GET['sub_category']))){
+                                if(!empty(category(subCategory($_GET['sub_category'])['category_id']))){
+                                    echo category(subCategory($_GET['sub_category'])['category_id'])['name']." (".subCategory($_GET['sub_category'])['name'].")";
+                                }
+                            }
+                           ?>
+                        </li>
                     </ol>
                 </nav>
             </div>
