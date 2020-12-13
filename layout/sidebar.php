@@ -11,11 +11,11 @@
             <div class="catagory-section">
 
                 <a class="my-2" href="dashboard.php">
-                    <div class="list listDashboard"><i class="feather-home px-3 pl-4"></i>Dashboard
+                    <div class="list listDashboard d-flex align-items-center"><i class="feather-home px-3 pl-4"></i>Dashboard
                     </div>
                 </a>
                 <a class="my-2" href="index.php">
-                    <div class="list listUser"><i class="feather-layout px-3 pl-4"></i>Front Panel</div>
+                    <div class="list listUser d-flex align-items-center"><i class="feather-layout px-3 pl-4"></i>Front Panel</div>
                 </a>
                 <div class="a-m-panel my-3">
                     <a class="my-2" href="#">
@@ -46,7 +46,7 @@
                         </div>
                     </a>
                     <a class="my-2" href="<?php echo $url; ?>/post_add.php">
-                        <div class="list listPostAdd"><i class="feather-plus-circle pr-2 pl-4"></i>Add Post</div>
+                        <div class="list listPostAdd d-flex align-items-center"><i class="feather-plus-circle pr-2 pl-4"></i>Add Post</div>
 
                     </a>
                 </div>

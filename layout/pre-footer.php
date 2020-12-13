@@ -19,7 +19,7 @@
 <script src="<?php echo $url; ?>/js/admin.js"></script>
 <script src="<?php echo $url; ?>/js/dashboard.js"></script>
 <script>
-    $(".table").dataTable({
+    $(".table.table-hover").dataTable({
         "order": [[0, "asc" ]]
     });
     $('[data-toggle="popover"]').popover()

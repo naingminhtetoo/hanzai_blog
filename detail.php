@@ -1,7 +1,4 @@
 <?php require_once "layout/front_panel/header.php" ?>
-    <title>Hanzai Blog</title>
-<?php require_once "layout/front_panel/side_header.php" ?>
-
 <?php
 $pageno = 1;
 if(isset($_GET['id'])){
@@ -25,6 +22,18 @@ if(isset($_SESSION['user']['id'])){
 
 viewerRecord($userId, $id, $_SERVER['HTTP_USER_AGENT']);
 ?>
+
+<title><?php echo empty($data)? $info['short'] : $data[0]->title; ?></title>
+<meta name="title" content="<?php echo empty($data)? $info['name'] : $data[0]->title; ?>">
+<meta name="description" content="<?php echo empty($data)? $info['description'] : short($data[0]->description,100); ?>">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="<?php echo $url; ?>/detail.php?id=<?php echo $data[0]->id; ?>">
+<meta property="og:title" content="<?php echo empty($data)? $info['title'] : $data[0]->title; ?>">
+<meta property="og:description" content="<?php echo empty($data)? $info['description'] : short($data[0]->description,100); ?>">
+<meta property="og:image" content="<?php echo $url; ?>/<?php echo empty($data)? 'images/app_img.jpg' : 'files/'.$data[0]->photo; ?>">
+<?php require_once "layout/front_panel/side_header.php" ?>
 <?php require_once "layout/front_panel/ph_nav_bar.php"?>
 <?php require_once "layout/front_panel/app_logo_header.php"?>
 

@@ -23,7 +23,7 @@
                     Categories
                 </a>
                 <?php
-                $category_data = json_decode(file_get_contents("http://localhost/admin/api/categories.php"));
+                $category_data = json_decode(file_get_contents("$url/api/categories.php"));
                 if (empty($category_data)) {
                     echo "no";
                 } else {

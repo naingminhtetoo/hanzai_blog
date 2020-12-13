@@ -535,7 +535,7 @@ function posts(){
 }
 
 function postsOrderByViewers(){
-    $sql = "SELECT COUNT(*) AS total,post_id FROM `viewers` GROUP BY post_id ORDER BY total DESC,post_id DESC LIMIT 5";
+    $sql = "SELECT COUNT(*) AS total,post_id FROM `viewers` GROUP BY post_id ORDER BY total DESC LIMIT 5";
     return fetchAll($sql);
 }
 function postDelete($id){
