@@ -14,7 +14,7 @@ require_once "layout/nav_bar.php";
                                     <i class="feather-grid text-white"></i>
                                 </div>
                                 <div class="t-s d-flex flex-column align-items-center"><h5
-                                            class="m-0 text-dark counter-up"><?php echo count(posts())+1; ?></h5>
+                                            class="m-0 text-dark counter-up"><?php echo count(posts()); ?></h5>
                                     <h6 class="text-dark">Posts</h6></div>
                             </div>
                         </a>
@@ -67,7 +67,7 @@ require_once "layout/nav_bar.php";
                                             ?>
                                                 <tr>
                                                     <td><?php echo $i++; ?></td>
-                                                    <td><?php echo $post_item['title']; ?></td>
+                                                    <td><?php echo short($post_item['title'],50); ?></td>
                                                     <td><span class="btn btn-outline-info btn-sm"><i class="feather-user"></i> <?php echo count(viewerCountByPost($post_item['id'])); ?></span></td>
                                                     <td><?php echo category(subCategory($post_item['sub_category_id'])['category_id'])['name']; ?></td>
                                                     <td class="text-nowrap">

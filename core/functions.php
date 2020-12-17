@@ -304,7 +304,6 @@ function categoryAdd(){
 function categoryDelete($id){
     $sql="DELETE FROM categories WHERE id = $id";
     return runQuery($sql);
-
 }
 
 function categoryUpdate(){
@@ -533,7 +532,6 @@ function posts(){
     $sql = "SELECT posts.* FROM posts INNER JOIN sub_categories ON posts.sub_category_id = sub_categories.id ORDER BY posts.id DESC";
     return fetchAll($sql);
 }
-
 function postsOrderByViewers(){
     $sql = "SELECT COUNT(*) AS total,post_id FROM `viewers` GROUP BY post_id ORDER BY total DESC LIMIT 5";
     return fetchAll($sql);

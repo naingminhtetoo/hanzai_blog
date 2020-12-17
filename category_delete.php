@@ -14,5 +14,8 @@ if($current == null){
     linkTo('category.php');
 }
 if(categoryDelete($id)){
-    linkTo('category.php');
+    $sql="DELETE FROM sub_categories WHERE category_id = $id";
+    if(runQuery($sql)){
+        linkTo('category.php');
+    }
 }
