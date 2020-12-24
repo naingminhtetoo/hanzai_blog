@@ -5,8 +5,8 @@
                 <div class="d-flex flex-column">
                     <img src="<?php echo $url; ?>/images/app_title_logo_light.png" width="150px" alt="">
                     <a href="<?php echo $url; ?>/index.php" class="mt-3 h5">Home</a>
-                    <a href="<?php echo $url; ?>/about.php" class="mt-3 h5">About Me</a>
-                    <a href="<?php echo $url; ?>/contact.php " class="mt-3 h5">Contact Me</a>
+<!--                    <a href="--><?php //echo $url; ?><!--/about.php" class="mt-3 h5">About Me</a>-->
+<!--                    <a href="--><?php //echo $url; ?><!--/contact.php " class="mt-3 h5">Contact Me</a>-->
 
                 </div>
             </div>

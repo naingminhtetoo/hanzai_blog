@@ -77,6 +77,12 @@ if($current == null){
                             </span>
                         </span>
                         <div>
+                            <?php
+                                $share_url = rawurlencode($url."/detail.php?id={$current['id']}");
+                            ?>
+                            <iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo $share_url; ?>&layout=button&size=small&appId=2343078929128737&width=67&height=20" width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div>
                             <img src="files/<?php echo $current['photo'] ?>" class="img-fluid" alt="">
                         </div>
                         <div class="mt-4">

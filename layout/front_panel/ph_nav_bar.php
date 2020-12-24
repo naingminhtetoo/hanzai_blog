@@ -12,12 +12,12 @@
             <li class="nav-item active nav-home">
                 <a class="nav-link text-white" href="index.php">Home</a>
             </li>
-            <li class="nav-item nav-contact">
-                <a class="nav-link text-white" href="<?php echo $url ?>/contact.php">Contact</a>
-            </li>
-            <li class="nav-item nav-about">
-                <a class="nav-link text-white" href="<?php echo $url ?>/about.php">About</a>
-            </li>
+<!--            <li class="nav-item nav-contact">-->
+<!--                <a class="nav-link text-white" href="--><?php //echo $url ?><!--/contact.php">Contact</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item nav-about">-->
+<!--                <a class="nav-link text-white" href="--><?php //echo $url ?><!--/about.php">About</a>-->
+<!--            </li>-->
             <li class="nav-item nav-category">
                 <a class="nav-link text-white" href="#">
                     Categories

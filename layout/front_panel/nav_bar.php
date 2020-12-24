@@ -6,12 +6,12 @@
                     <li class="nav-item active nav-home">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item nav-contact">
-                        <a class="nav-link" href="<?php echo $url ?>/contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item nav-about">
-                        <a class="nav-link" href="<?php echo $url ?>/about.php">About</a>
-                    </li>
+<!--                    <li class="nav-item nav-contact">-->
+<!--                        <a class="nav-link" href="--><?php //echo $url ?><!--/contact.php">Contact</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item nav-about">-->
+<!--                        <a class="nav-link" href="--><?php //echo $url ?><!--/about.php">About</a>-->
+<!--                    </li>-->
 
                     <li class="nav-item dropdown nav-category">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
